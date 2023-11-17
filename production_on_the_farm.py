@@ -4,7 +4,6 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
 import matplotlib.pyplot as plt
 
-# Load datasets for each season (assuming files are named 'spring_fruits.csv', 'summer_fruits.csv', 'autumn_fruits.csv', and 'winter_fruits.csv')
 spring_fruits = pd.read_csv('spring_fruits.csv')
 summer_fruits = pd.read_csv('summer_fruits.csv')
 autumn_fruits = pd.read_csv('autumn_fruits.csv')
@@ -36,9 +35,6 @@ print(f"Model accuracy: {accuracy}")
 
 print(classification_report(y_test, y_pred))
 
-# Assuming you have data about the planting periods of each fruit for each season in an appropriate format
-
-# Here's a simple example for demonstration purposes
 planting_period_data = {
     'Fruit': ['Apple', 'Orange', 'Banana', 'Strawberry'],
     'Spring': [30, 60, 45, 50],
